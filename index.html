@@ -3,23 +3,41 @@
 <head>
 	<title></title>
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
 	<style type="text/css">
 
 
 
 	#jackson{
+		background-position: center;
 	height:1000px;
-	width:1500px;
-	background-image:url(https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fyanksgoyard.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2021%2F08%2F1335166892.jpeg);
+	width:1200px;
+	background-image:url(stadium.png);
 	background-size: cover;
+	margin: 0px;
 
 	}
 
 	#menubar{
-		width:275px;
-		height:1000px;
-		background-color:navy;
+		width:1200px;
+		height:115px;
+		background-color:black;
+		position:absolute;
+		opacity: 0.80;
 
+	}
+
+	.circle{
+		width:32%;
+		color:white;
+		font-size: 75px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		position: relative;
+		display:inline-block;
+		margin:1px;
+		text-align: center;
 	}
 
 
@@ -27,12 +45,15 @@
 </head>
 
 <body>
+<div id="menubar">
 	
+	<a href="journal.html"><div class=circle>My Journal</div></a>
+	<div class=circle>About Me</div>
+	<div class=circle>My Statistics</div>
+</div>
+
 <div id="jackson"></div>
 
-<div 		id="menubar">
-	
-</div>
 
 
 </body>
