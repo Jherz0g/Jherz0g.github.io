@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+
+	<title>
+		
+
+
+
+
+	</title>
+
+
+
+</head>
+
+
+
+
+<body>
+
+<script type="text/javascript">
+	
+	function makeSquidward (){
+
+	var Squidward = document.createElement("div")
+	document.body.appendChild(Squidward)
+	Squidward.style.backgroundImage = "url(https://static.tvtropes.org/pmwiki/pub/images/squidward_tentacles_91.png)";
+
+	Squidward.style.height = "150px";
+	Squidward.style.width = "150px";
+	Squidward.style.backgroundSize = "contain"
+	Squidward.style.display = "inline-block";
+
+	Squidward.addEventListener("click", function() {
+		Squidward.style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/_j91sPIeG71Cx6Q76FTPrbyvFA9xjcm5_8fq5dRFxZg_T9vbatpXIAD0EIbliLEMUa7hfNGcU-fi1kT4WUpniChq85tnsprvGyRoTsJv8fNjbbJGBcY)"
+
+	})
+
+
+
+
+
+} // end of function //
+
+makeSquidward()
+
+setInterval(makeSquidward,1000);
+
+
+</script>
+	
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
