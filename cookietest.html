@@ -4,7 +4,27 @@
 
 <head>
 
+<style type="text/css">
+	
+#menubar {
 
+	height: 100px;
+	width: 100%;
+	background-color: rgb(255,225,185);
+	font-family: courier;
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+#body {
+
+	background-color: rgb(255,239,213);
+	height: 100%;
+	width: 100%;
+}
+
+</style>
 
 	<title>
 		
@@ -21,7 +41,14 @@
 
 
 
-<body>
+<body id="body">
+
+<div id="menubar">
+	
+	Click on Squidward for a surprise!
+
+</div>
+
 
 <script type="text/javascript">
 	
@@ -37,11 +64,9 @@
 	Squidward.style.display = "inline-block";
 
 	Squidward.addEventListener("click", function() {
-		Squidward.style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/_j91sPIeG71Cx6Q76FTPrbyvFA9xjcm5_8fq5dRFxZg_T9vbatpXIAD0EIbliLEMUa7hfNGcU-fi1kT4WUpniChq85tnsprvGyRoTsJv8fNjbbJGBcY)"
+		Squidward.style.backgroundImage = "url(carl.png)"
 
 	})
-
-
 
 
 
@@ -54,8 +79,6 @@ setInterval(makeSquidward,1000);
 
 </script>
 	
-
-
 
 
 
