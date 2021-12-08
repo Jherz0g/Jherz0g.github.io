@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style type="text/css">
+	
+	#football {
+
+		height: 200px;
+		width: 200px;
+		background-color: lightblue;
+		animation-name: dive;
+		animation-duration: 3s;
+		animation-iteration-count: 1;
+		position: absolute;
+				top:250px;
+
+
+	}
+
+#ball{
+
+	height: 200px;
+	width: 200px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRycFe0yO91_RXUc8ZqW4dgHddVjNYIA60izg&usqp=CAU);
+	animation-name: throw;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	position: absolute;
+			top: 50px;
+			left: 500
+
+}
+
+
+@keyframes dive{
+
+	0%{
+		left:20px;
+		top:250px;
+	}
+
+	100%{
+		left:850px;
+		top:250px;
+	}
+}
+
+@keyframes throw{
+
+	0%{
+		left:500px;
+		top:50px;
+	}
+
+	100%{
+		left:900px;
+		top:250px;
+	}
+}
+</style>
+
+	<title>
+		
+
+	</title>
+
+
+</head>
+
+
+<body>
+
+<div id="football">
+	
+</div>
+
+
+
+<div id="ball">
+	
+</div>
+
+</body>
+
+
+</html>
