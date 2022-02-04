@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<title></title>
+
+<style type="text/css">
+	
+	#background {
+		height: 2000px;
+		width: 100%;
+	}
+
+.squares{
+
+height: 35px;
+width: 35px;
+background-color: green;
+position: absolute;
+border: 2px;
+border-color: black;
+border-style: solid;
+
+}
+
+.circle{
+
+height: 35px;
+width: 35px;
+background-color: red;
+position: absolute;
+border: 2px;
+border-color: white;
+border-style: solid;
+border-radius: 50%;
+
+}
+
+</style>
+
+
+</head>
+
+
+<!-- Plan -  make a thing that when you click, red is set to x-coord and green is set to y-coord.
+
+b coord is ration of x and y coord.
+
+1. create div
+2. make it span the whole screen
+3. make a script tag 
+4. add event listener to listen for click
+5. -->
+
+<body>
+
+
+<div id="background">
+	
+<script type="text/javascript">
+	
+var background = document.
+	getElementById("background");
+
+	background.addEventListener("mousemove", function(event){
+
+		console.log(event.clientX, event.clientY);
+
+		var square = document.createElement("div");
+		background.appendChild(square);
+		square.classList.add("squares");
+
+		square.style.left = event.clientX+"px";
+		square.style.top = event.clientY+"px";
+
+
+		 if (event.clientX < 300 && event.clientY < 300){
+			square.style.backgroundColor = "purple";
+		}
+
+		 if (300<event.clientX<600 && 300<event.clientY<400){
+			square.style.backgroundColor = "blue";
+		}
+
+		 if (event.clientX>600 ){
+			square.style.backgroundColor = "green";
+		}
+
+	}
+
+		)
+	
+
+var background = document.
+	getElementById("background");
+
+	background.addEventListener("mousedown", function(event){
+
+		console.log(event.clientX, event.clientY);
+
+		var circle = document.createElement("div");
+		background.appendChild(circle);
+		circle.classList.add("circle");
+
+		circle.style.left = event.clientX+"px";
+		circle.style.top = event.clientY+"px";
+
+
+		 if (event.clientX < 300 && event.clientY < 300){
+			circle.style.backgroundColor = "purple";
+		}
+
+		 if (300<event.clientX<600 && 300<event.clientY<400){
+			circle.style.backgroundColor = "red";
+		}
+
+		 if (event.clientX>600 ){
+			circle.style.backgroundColor = "orange";
+		}
+
+	}
+
+		)
+
+
+</script>
+
+
+</div id="square">
+
+
+</div>
+
+<div id="circle">
+	
+</div>
+
+</body>
+
+
+</html>

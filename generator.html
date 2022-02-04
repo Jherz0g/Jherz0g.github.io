@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	*{
+		margin:0;
+	}
+	#box{
+		width:250px;
+		height:175px;
+		border:1px solid black;
+		font-size:100px;
+		text-align:center;
+		top:300px;
+		position: relative;
+
+	}
+	#text{
+		font-family:Fontdiner Swanky, cursive;
+		font-size:30pt;
+		top:45px;
+		position:relative;
+	}
+
+	#background{
+		width:1440x;
+		height:1000px;
+		background-color: cyan;
+		background-size:cover;
+		background-position: center;
+		position: relative;
+
+	}
+</style>
+</head>
+<body>
+
+<div id="background">
+	
+<center> <div id="box">	</div> 
+<div id="text">ayo whateva dis say u r</div></center>
+
+</div>
+
+
+
+
+<script type="text/javascript">
+	
+	var box = document.getElementById("box")
+	var array = ["🥳", "🙁", "🤥","😁", "😱","😓","🤑","🤓","🤤","🤬","🤫","🤯","😨","🤠","🤐","😑","🥱"];
+	
+	box.addEventListener("click", function(){
+			var random = Math.round(Math.random()*16)
+
+		box.innerText = array[random]
+})
+
+
+</script>
+</body>
+</html>
