@@ -6,33 +6,48 @@
 
 	<title></title>
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@700&display=swap" rel="stylesheet">
+
+
 <style type="text/css">
 	
 	#background {
-		height: 2000px;
+		height: 705px;
 		width: 100%;
+		background-color: pink;
 	}
 
+#title{
+
+	text-align: center;
+	color: black;
+	font-size: 45px;
+	font-family: 'Stick NO Bills', sans-serif;
+	top: 10px;
+}
 .squares{
 
 height: 35px;
 width: 35px;
-background-color: green;
+background-color: transparent;
 position: absolute;
-border: 2px;
-border-color: black;
+border: 1px;
+border-color: transparent;
 border-style: solid;
 
 }
 
 .circle{
 
-height: 35px;
-width: 35px;
+height: 50px;
+width: 50px;
 background-color: red;
 position: absolute;
-border: 2px;
-border-color: white;
+border: 1px;
+border-color: transparent;
 border-style: solid;
 border-radius: 50%;
 
@@ -58,7 +73,11 @@ b coord is ration of x and y coord.
 
 
 <div id="background">
-	
+
+	<div id="title">
+		🇺🇸 Scroll around the screen! 🇺🇸
+	</div>
+
 <script type="text/javascript">
 	
 var background = document.
@@ -76,54 +95,83 @@ var background = document.
 		square.style.top = event.clientY+"px";
 
 
-		 if (event.clientX < 300 && event.clientY < 300){
-			square.style.backgroundColor = "purple";
-		}
-
-		 if (300<event.clientX<600 && 300<event.clientY<400){
+		 if (event.clientX < 550 && event.clientY>55 && event.clientY<400){
 			square.style.backgroundColor = "blue";
 		}
 
-		 if (event.clientX>600 ){
-			square.style.backgroundColor = "green";
+		 if (550<event.clientX && 100<event.clientY && event.clientY<150){
+			square.style.backgroundColor = "white";
+		}
+		if (550<event.clientX && 200<event.clientY && event.clientY<250){
+			square.style.backgroundColor = "white";
+		}
+		if (550<event.clientX && 300<event.clientY && event.clientY<350){
+			square.style.backgroundColor = "white";
+		}
+		if (550<event.clientX && 400<event.clientY && event.clientY<450){
+			square.style.backgroundColor = "white";
+		}
+		if (550<event.clientX && 500<event.clientY && event.clientY<550){
+			square.style.backgroundColor = "white";
+		}
+		if (550<event.clientX && 600<event.clientY && event.clientY<650){
+			square.style.backgroundColor = "white";
+		}
+		if (550<event.clientX && 700<event.clientY && event.clientY<750){
+			square.style.backgroundColor = "white";
 		}
 
-	}
+		if (550>event.clientX && 400<event.clientY && event.clientY<450){
+			square.style.backgroundColor = "white";
+		}
+		if (550>event.clientX && 500<event.clientY && event.clientY<550){
+			square.style.backgroundColor = "white";
+		}
+		if (550>event.clientX && 600<event.clientY && event.clientY<650){
+			square.style.backgroundColor = "white";
+		}
+		if (550>event.clientX && 700<event.clientY && event.clientY<750){
+			square.style.backgroundColor = "white";
+		}
+
+
+		if (550<event.clientX && 55<event.clientY && event.clientY<100){
+			square.style.backgroundColor = "red";
+		}
+		if (550<event.clientX && 150<event.clientY && event.clientY<200){
+			square.style.backgroundColor = "red";
+		}
+		if (550<event.clientX && 250<event.clientY && event.clientY<300){
+			square.style.backgroundColor = "red";
+		}
+		if (550<event.clientX && 350<event.clientY && event.clientY<400){
+			square.style.backgroundColor = "red";
+		}
+		if (550<event.clientX && 450<event.clientY && event.clientY<500){
+			square.style.backgroundColor = "red";
+		}
+		if (550<event.clientX && 550<event.clientY && event.clientY<600){
+			square.style.backgroundColor = "red";
+		}
+		if (550<event.clientX && 650<event.clientY && event.clientY<700){
+			square.style.backgroundColor = "red";
+		}
+
+		if (550>event.clientX && 450<event.clientY && event.clientY<500){
+			square.style.backgroundColor = "red";
+		}
+		if (550>event.clientX && 550<event.clientY && event.clientY<600){
+			square.style.backgroundColor = "red";
+		}
+		if (550>event.clientX && 650<event.clientY && event.clientY<700){
+			square.style.backgroundColor = "red";
+		}
+
+}
+
 
 		)
 	
-
-var background = document.
-	getElementById("background");
-
-	background.addEventListener("mousedown", function(event){
-
-		console.log(event.clientX, event.clientY);
-
-		var circle = document.createElement("div");
-		background.appendChild(circle);
-		circle.classList.add("circle");
-
-		circle.style.left = event.clientX+"px";
-		circle.style.top = event.clientY+"px";
-
-
-		 if (event.clientX < 300 && event.clientY < 300){
-			circle.style.backgroundColor = "purple";
-		}
-
-		 if (300<event.clientX<600 && 300<event.clientY<400){
-			circle.style.backgroundColor = "red";
-		}
-
-		 if (event.clientX>600 ){
-			circle.style.backgroundColor = "orange";
-		}
-
-	}
-
-		)
-
 
 </script>
 
