@@ -7,9 +7,17 @@
     <style>
 
         #background{
-            background-color: #00CED1;
-            height: 1000px;
-            width: 1500px;
+            background-color: #CD853F;
+            height: 950px;
+            width: 1430px;
+        }
+        #title{
+            text-align: center;
+            font-family: courier;
+            font-size: 45px;
+            color: crimson;
+            -webkit-text-stroke: 1.75px black;
+            top: 20px;
         }
         .virus{
         	left:1000px;
@@ -27,23 +35,41 @@
 
 
 		}
+        p{
+            font-family: courier;
+            font-size: 30px;
+            color: crimson;
+            text-align: left;
+            border: 10px;
+            border-color: black;
+            -webkit-text-stroke: 1.1px black;
+        }
+        
+#input{
+    height: 30px;
+    width: 125px;
+    border-width: 3px;
+    border-color: red;
+    background-color: #B0C4DE;
+
+}
+
 	</style>
+
 </head>
 
 <body>
 <div id="background">
+    <div id="title">
+        Eliminate the Patricks!
+    </div>
 
-	<audio id="sound" src="dead.mp3"> </audio>
-
-
-
-
-
-
-    <p>viruses gone:</p><input id="input"></input>
+	<audio id="sound" src="a111.mp3"></audio>
 
 
 
+
+    <p>Patricks eliminated:</p><input id="input"></input>
 
 
 
@@ -60,7 +86,7 @@
 
         function changePosition() {
             corona.style.left = 1000 * Math.random() + "px";
-            corona.style.top = 1000 * Math.random() + "px";
+            corona.style.top = 625 * Math.random() + 185 + "px";
 
 
         };
@@ -76,7 +102,7 @@
 
         })
 
-        setInterval(changePosition, 2000)
+        setInterval(changePosition, 1750)
     };
 
 
@@ -85,7 +111,11 @@
 
 
     </script>
+
+
     </div>
+
+
 </body>
 
 </html>
