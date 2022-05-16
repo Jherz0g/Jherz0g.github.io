@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        
+        #background{
+            background-color: pink;
+            width: 1420px;
+            height: 700px;
+        }
+
+        button{
+            width: 720px;
+            height: 80px;
+            font-size: 45px
+
+        }
+        #button{
+            font-family: 'Macondo', cursive;
+            color: black;
+            background-color: pink;
+        }
+        #image{
+            width: 1420px;
+            height: 550px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border:solid black 2px;
+        }
+
+        #text{
+            font-family: 'Macondo', cursive;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+   <div id="background">
+
+        <center><button  id="button"
+>Click to see a random doodle!
+        </button>
+
+
+
+    </center>
+
+    <div id="image"></div>
+
+        <div id="text"></div>
+
+
+        <script type="text/javascript">
+            
+var button = document.getElementById('button');
+var image = document.getElementById("image");
+
+            	var drawing = ["corner.jpg", "road.jpg", "heart.jpg", "football.jpg", "s.jpg", "smile.jpg", "margins.jpg", "colors.jpg"];
+
+                var description = ["this is the corner", "road.jpg", "heart.jpg", "football.jpg", "s.jpg", "smile.jpg", "margins.jpg", "colors.jpg"];
+
+button.addEventListener(
+    "click", function chooseTeam(){
+var randomNumber = Math.round(Math.random()*7);
+    
+
+image.style.backgroundImage = "url(" + drawing[randomNumber] + ")";
+text.innerText = description[randomNumber];
+
+
+    console.log(randomNumber);
+});
+
+
+            	 
+            </script>
+</div>
+</body>
+
+</html>
