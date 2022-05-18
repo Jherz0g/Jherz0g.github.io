@@ -3,13 +3,15 @@
 <html>
 
 <head>
-    <title></title>
+    <title>
+        Doodle Project
+    </title>
     <style type="text/css">
         
         #background{
-            background-color: pink;
+            background-color: rgb(227, 185, 217);
             width: 1420px;
-            height: 700px;
+            height: 690px;
         }
 
         button{
@@ -21,39 +23,54 @@
         #button{
             font-family: 'Macondo', cursive;
             color: black;
-            background-color: pink;
+            background-color: rgb(173,216,230);
+            
         }
-        #image{
+        #container{
             width: 1420px;
-            height: 550px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
+            height: 600px;
             border:solid black 2px;
         }
 
         #text{
             font-family: 'Macondo', cursive;
             color: black;
+            font-size: 43px;
         }
+
+        #image{
+            top: 25px;
+
+        }
+        .box{
+            display:inline-block;
+            position: relative;
+            width: 675px;
+            height: 500px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
     </style>
 </head>
 
 <body>
+     <center>
    <div id="background">
-
-        <center><button  id="button"
+ <button  id="button"
 >Click to see a random doodle!
-        </button>
+</button>
 
+<div  id="container">
+<div class="box" id="image"></div>
+<div class="box" id="text"></div>
 
+    
+</div>
 
-    </center>
-
-    <div id="image"></div>
-
-        <div id="text"></div>
-
+    
+</center>
 
         <script type="text/javascript">
             
@@ -62,7 +79,7 @@ var image = document.getElementById("image");
 
             	var drawing = ["corner.jpg", "road.jpg", "heart.jpg", "football.jpg", "s.jpg", "smile.jpg", "margins.jpg", "colors.jpg"];
 
-                var description = ["this is the corner", "road.jpg", "heart.jpg", "football.jpg", "s.jpg", "smile.jpg", "margins.jpg", "colors.jpg"];
+                var description = ["I still like to draw squares in the corner because I like to have my pen follow the border and gradually get smaller towards the center of the square", "I used to draw roads on blank sheets of paper because I liked the way that they wound through and around eachother", "I love the heartbeat monitor in hospitals for some reason, so I started out with a straight line looking the same. Eventually, I started to curve it and make it my own.", "Back in 3-4th grade, I was obssessed with Madden Mobile, so I started to draw my own football plays. Looking back on them, they aren't too good, but its the thought that counts.", "As almost everybody else was, I was very into the 'S' trend. I loved to draw them, as well as more complex versions of them.", "I always draw a smiley face on the back of every single worksheet, paper, or test that I get. I don't know why, I just do it. I've been doing it forever.", "I like to doodle random lines in the margins and on the side of text that we get on worksheets and papers. Here, I was inspired by Maui's Hook from the movie 'Moana'. I drew a few different variations of the hook.", "I used to draw circles upon circles back in 5th grade, and I decided to turn it into art. There was a plastic took that had circles on them, one inside the next, and I would take a piece of paper and some crayons and rub the crayons over it to make the circles. This one is my favorite, as it also was my first."];
 
 button.addEventListener(
     "click", function chooseTeam(){
